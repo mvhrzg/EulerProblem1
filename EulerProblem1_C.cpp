@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
@@ -15,7 +16,11 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     int sum = 0;
-    for(int i = 2; i < 1000; i++){
+    int n;
+    cout << "Enter a number: " << endl;
+    scanf ("%d", &n);
+    cout << "You entered: " << n << endl;
+    for(int i = 2; i < n; i++){
         if(i%3 == 0 || i%5 == 0){
             sum += i;
         }
